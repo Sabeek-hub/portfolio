@@ -3,27 +3,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const postsContainer = document.getElementById('posts');
 
     // Load posts from local storage
-    const loadPosts = () => {
+    function loadPosts() {
         const posts = JSON.parse(localStorage.getItem('posts')) || [];
         postsContainer.innerHTML = posts.map(post => `
             <div class="post">
-                <strong>${post.username}</strong>: ${post.message}
+                <div class="username">${post.username}</div>
+                <div class="message">${post.message}</div>
+                <div class="timestamp">${new Date(post.timestamp).toLocaleString()}</div>
             </div>
         `).join('');
-    };
+    }
 
     // Save post to local storage
-    const savePost = (username, message) => {
+    function savePost(username, message) {
         const posts = JSON.parse(localStorage.getItem('posts')) || [];
-        posts.push({ username, message });
+        posts.push({ username, message, timestamp: Date.now() });
         localStorage.setItem('posts', JSON.stringify(posts));
-    };
+    }
 
     // Handle form submission
     postForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        const username = document.getElementById('username').value;
-        const message = document.getElementById('message').value;
+        const username = document.getElementById('username').value.trim();
+        const message = document.getElementById('message').value.trim();
 
         if (username && message) {
             savePost(username, message);
