@@ -5,29 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .food-menu img {
+            width: 250px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Food Delivery Service</h1>
+        <h1>Delicious Food Delivery</h1>
     </header>
 
     <main>
-        <section id="restaurants">
-            <h2>Available Restaurants</h2>
-            <div id="restaurant-list"></div>
+        <section class="food-menu">
+            <h2>Our Menu</h2>
+            <div class="food-item" id="food1">
+                <img src="pasta.jpg" alt="Pasta Primavera">
+                <h3>Pasta Primavera</h3>
+                <p>Delicious pasta with fresh vegetables.</p>
+                <p class="price">$12.99</p>
+                <button onclick="addToCart('Pasta Primavera', 12.99)">Add to Cart</button>
+            </div>
+            <div class="food-item" id="food2">
+                <img src="burger.jpg" alt="Cheeseburger">
+                <h3>Cheeseburger</h3>
+                <p>Juicy burger with melted cheese.</p>
+                <p class="price">$10.99</p>
+                <button onclick="addToCart('Cheeseburger', 10.99)">Add to Cart</button>
+            </div>
+            <div class="food-item" id="food3">
+                <img src="pizzza.jpg" alt="Margherita Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Classic pizza with fresh mozzarella and basil.</p>
+                <p class="price">$14.99</p>
+                <button onclick="addToCart('Margherita Pizza', 14.99)">Add to Cart</button>
+            </div>
         </section>
 
-        <section id="order-summary">
-            <h2>Your Order</h2>
-            <ul id="order-list"></ul>
-            <button id="place-order">Place Order</button>
+        <section class="order-form">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <label for="location">Delivery Location:</label>
+                <input type="text" id="location" required>
+                <label for="phone">Customer Phone Number:</label>
+                <input type="tel" id="phone" required>
+                <h3>Your Cart:</h3>
+                <ul id="orderList"></ul>
+                <p id="totalPrice">Total: $0.00</p>
+                <button type="submit">Place Order</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Food Delivery</p>
+        <p>&copy; 2024 Delicious Food Delivery</p>
     </footer>
 
-    <script src="3script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
