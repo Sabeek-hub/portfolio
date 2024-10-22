@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classified Ads</title>
+    <link rel="stylesheet" href="styles6.css">
+</head>
+<body>
+    <header>
+        <h1>Classified Ads</h1>
+        <nav>
+            <a href="#post-ad">Post an Ad</a>
+            <a href="#ads">View Ads</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="post-ad">
+            <h2>Post an Ad</h2>
+            <form id="ad-form">
+                <input type="text" id="title" placeholder="Ad Title" required>
+                <textarea id="description" placeholder="Ad Description" required></textarea>
+                <input type="text" id="price" placeholder="Price" required>
+                <input type="file" id="image" accept="image/*" required>
+                <button type="submit">Submit Ad</button>
+            </form>
+        </section>
+
+        <section id="ads">
+            <h2>Available Ads</h2>
+            <div id="ad-list"></div>
+        </section>
+    </main>
+
+    <script src="script6.js"></script>
+</body>
+</html>
