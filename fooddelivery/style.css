@@ -6,22 +6,24 @@ body {
     background: linear-gradient(120deg, #e0f7fa, #ffecb3); /* Soft gradient background */
     color: #333; /* Set a default text color */
     background-size: 200% 200%; /* For animation effect */
-    animation: gradient 10s ease infinite; /* Animated background gradient */
+    animation: gradient 12s ease infinite; /* Slower animated background gradient */
 }
 
+/* Gradient animation for background */
 @keyframes gradient {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
+/* Header Styles */
 header {
     background: linear-gradient(135deg, #ff6b6b, #ff3d3d); /* Gradient header */
     color: #fff;
-    padding: 20px 0;
+    padding: 25px 0;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    border-bottom: 3px solid #ff4747; /* Add a bottom border for definition */
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4); /* Deeper shadow for header */
+    border-bottom: 4px solid #ff4747; /* Slightly thicker bottom border */
 }
 
 /* Footer Styles */
@@ -29,97 +31,99 @@ footer {
     background: linear-gradient(135deg, #333, #444); /* Gradient footer */
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 12px 0;
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); /* Shadow effect for footer */
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow effect for footer */
 }
 
 /* Container Styles */
 .login-container, .restaurants, #cartContainer, #orderSummaryContainer {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 900px; /* Increased max-width */
+    margin: 25px auto;
+    padding: 25px;
     background: #ffffff; /* White background for content areas */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    transition: transform 0.3s; /* Transform transition */
+    border-radius: 20px; /* Larger rounded corners */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Larger shadow for more depth */
+    transition: transform 0.3s ease-out; /* Smoother transition */
 }
 
+/* Hover effect for containers */
 .login-container:hover, .restaurants:hover, #cartContainer:hover, #orderSummaryContainer:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
+    transform: translateY(-10px); /* Slightly stronger lift effect */
 }
 
 /* Headings */
 h2, h3, h4 {
     color: #444; /* Darker headings for contrast */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow for depth */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Stronger text shadow for depth */
 }
 
 /* Input Fields */
 input {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0;
+    padding: 14px;
+    margin: 12px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
-    transition: border 0.3s, box-shadow 0.3s; /* Transition for border and shadow */
+    transition: border 0.3s ease, box-shadow 0.3s ease; /* Transition for border and shadow */
 }
 
 input:focus {
-    border-color: #ff6b6b; /* Change border color on focus */
-    box-shadow: 0 0 5px rgba(255, 107, 107, 0.5); /* Shadow on focus */
+    border-color: #ff6b6b; /* Focused border color */
+    box-shadow: 0 0 6px rgba(255, 107, 107, 0.5); /* Focused shadow */
 }
 
 /* Button Styles */
 button {
-    padding: 10px 15px;
+    padding: 12px 18px; /* Larger padding for more prominent buttons */
     background-color: #ff4747; /* Button color */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Rounder corners for button */
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Include shadow transition */
+    font-size: 18px; /* Slightly larger text for buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
 button:hover {
-    background-color: #e63939; /* Button hover color */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+    background-color: #e63939; /* Hover button color */
+    transform: scale(1.08); /* Slightly larger button on hover */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
 /* Restaurant List Styles */
 .restaurant-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 15px; /* Add gap between items */
 }
 
 .restaurant-card {
     background: linear-gradient(135deg, #fff9c4, #ffe082); /* Gradient for restaurant cards */
-    border-radius: 10px;
+    border-radius: 12px; /* Softer rounded corners */
     padding: 20px;
-    margin: 10px;
-    flex: 1 0 30%; /* Allows 3 items per row */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transition for shadow and transform */
+    margin: 15px;
+    flex: 1 0 30%; /* Keeps 3 items per row */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
 .restaurant-card:hover {
-    transform: translateY(-3px); /* Lift effect on hover */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-6px); /* Lift effect with more intensity */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 /* Menu Container Styles */
 .menu-container {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 25px;
+    padding: 15px;
     background: #f9fbe7; /* Light green background */
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Rounded corners for menu */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
 }
 
 /* Menu Item Styles */
@@ -127,10 +131,10 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 0;
-    padding: 10px;
+    margin: 12px 0;
+    padding: 12px;
     border-bottom: 1px solid #ddd; /* Separator for menu items */
-    transition: background-color 0.3s; /* Transition for background */
+    transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
 .menu-item:hover {
@@ -142,42 +146,42 @@ button:hover {
 }
 
 .menu-item img {
-    width: 60px; /* Small size for item images */
-    height: 60px;
-    border-radius: 5px;
-    transition: transform 0.3s; /* Transition for image */
+    width: 70px; /* Slightly larger image size */
+    height: 70px;
+    border-radius: 8px; /* Rounder image corners */
+    transition: transform 0.3s ease; /* Image hover transition */
 }
 
 .menu-item img:hover {
-    transform: scale(1.1); /* Zoom effect on image hover */
+    transform: scale(1.15); /* Slight zoom effect on hover */
 }
 
 /* Cart Styles */
 #cartItems {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 #totalAmount {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #ff4747;
 }
 
 /* Order Summary Styles */
 #orderSummary {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 /* Styles for small buttons */
 .small-button {
-    padding: 5px 10px; /* Smaller padding for smaller buttons */
+    padding: 8px 14px; /* Slightly larger padding for small buttons */
     background-color: #ff4747; /* Button color */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Round corners for small buttons */
     cursor: pointer;
-    font-size: 12px; /* Smaller font size */
-    transition: background-color 0.3s, transform 0.3s; /* Include transform transition */
+    font-size: 14px; /* Slightly larger font for small buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
 
 .small-button:hover {
@@ -189,5 +193,20 @@ button:hover {
 @media (max-width: 600px) {
     .restaurant-card {
         flex: 1 0 100%; /* Stacks restaurant cards on small screens */
+    }
+    
+    .restaurant-list {
+        flex-direction: column; /* Stacks items vertically on small screens */
+    }
+
+    /* Adjusting button sizes on smaller screens */
+    button {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .small-button {
+        font-size: 12px;
+        padding: 6px 12px;
     }
 }
