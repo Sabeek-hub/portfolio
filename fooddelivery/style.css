@@ -23,4 +23,190 @@ header {
     padding: 25px 0;
     text-align: center;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
-    border-bottom: 4px solid #2E7D32; /* Darke
+    border-bottom: 4px solid #2E7D32; /* Darker green bottom border */
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #212121, #424242); /* Dark gray footer gradient */
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Container Styles */
+.login-container, .restaurants, #cartContainer, #orderSummaryContainer {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out;
+}
+
+/* Hover effect for containers */
+.login-container:hover, .restaurants:hover, #cartContainer:hover, #orderSummaryContainer:hover {
+    transform: translateY(-10px);
+}
+
+/* Headings */
+h2, h3, h4 {
+    color: #212121; /* Dark gray headings */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.5); /* Green shadow on focus */
+}
+
+/* Button Styles */
+button {
+    padding: 12px 18px;
+    background-color: #FF9800; /* Orange button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #FB8C00; /* Darker orange on hover */
+    transform: scale(1.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Restaurant List Styles */
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.restaurant-card {
+    background: linear-gradient(135deg, #C8E6C9, #FFECB3); /* Soft green to yellow gradient */
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px;
+    flex: 1 0 30%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu Container Styles */
+.menu-container {
+    margin-top: 25px;
+    padding: 15px;
+    background: #e8f5e9; /* Light green background */
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Item Styles */
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: rgba(76, 175, 80, 0.1); /* Light green background on hover */
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item img {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item img:hover {
+    transform: scale(1.15);
+}
+
+/* Cart Styles */
+#cartItems {
+    margin-bottom: 18px;
+}
+
+#totalAmount {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #FF9800; /* Orange for total amount */
+}
+
+/* Order Summary Styles */
+#orderSummary {
+    margin-bottom: 18px;
+}
+
+/* Styles for small buttons */
+.small-button {
+    padding: 8px 14px;
+    background-color: #009688; /* Teal button color */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.small-button:hover {
+    background-color: #00796B; /* Darker teal on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .restaurant-card {
+        flex: 1 0 100%;
+    }
+
+    .restaurant-list {
+        flex-direction: column;
+    }
+
+    /* Adjusting button sizes on smaller screens */
+    button {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+
+    .small-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
