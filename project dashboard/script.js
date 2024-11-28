@@ -1,4 +1,3 @@
-
 let tasks = [
   { name: 'Update Website', description: 'Revise homepage design', assignedTo: 'Alice', dueDate: '2024-11-15', status: 'Pending' },
   { name: 'Develop API', description: 'Create authentication API', assignedTo: 'Bob', dueDate: '2024-11-20', status: 'In Progress' },
