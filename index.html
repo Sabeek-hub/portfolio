@@ -1,85 +1,122 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FSWD Lab Links</title>
+    <title>Full Stack Web Development Laboratory Exercises</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #4A90E2;
-            text-decoration: underline;
-        }
-        h3 {
-            margin: 20px 0;
-            font-size: 1.5em;
-        }
-        a {
-            text-decoration: none;
-            color: #4A90E2;
-            font-weight: bold;
-            border: 2px solid #4A90E2;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        a:hover {
-            background-color: #4A90E2;
-            color: white;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #888;
-        }
+           body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0f7fa; /* Light cyan background */
+    color: #000000; /* Black text */
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, #00bcd4, #0097a7); /* Blue gradient */
+    color: #ffffff; /* White text */
+    padding: 50px 20px 80px;
+    clip-path: ellipse(120% 80% at 50% -20%);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #ffeb3b; /* Yellow background */
+    color: #1976d2; /* Blue text */
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn:hover {
+    background-color: #fbc02d; /* Darker yellow */
+    color: #ffffff; /* White text */
+}
+
+#links-section {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#links-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+#links-section ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+#links-section ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#links-section ul li a:hover {
+    background-color: #388e3c; /* Darker green */
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #eeeeee; /* Light gray background */
+    color: #000000; /* Black text */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.8em;
+}
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>FSWD Lab</h1>
-        <h2>by Sabeek</h2>
-        
-        <h3><i>1. Portfolio Link</i></h3>
-        <a href="https://sabeek-hub.github.io/portfolio/port/portfolio.html">View Portfolio</a>
-        
-        <h3><i>2. To-Do List Link</i></h3>
-        <a href="https://sabeek-hub.github.io/portfolio/todo/todolist1.html">Go to To-Do List</a>
-        
-        <h3><i>3. Microblogging Link</i></h3>
-        <a href="https://sabeek-hub.github.io/portfolio/microblogging/index1.html">Explore Microblogging</a>
-        
-        <h3><i>4. Food Delivery Link</i></h3>
-        <a href="https://sabeek-hub.github.io/portfolio/fooddelivery/login.html">Order Food Delivery</a>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <h3>MOHAMED SABEEK A (810022205104)</h3>
+        <a href="#links-section" class="hero-btn">Get Started</a>
+    </header>
 
-        <h3><i>5.classified website Link</i></h3>
-        <a href="https://sabeek-hub.github.io/portfolio/classifiedapps/index.html">selling product</a> 
+    <section id="links-section">
+        <h2>Explore the Sections</h2>
+        <ul>
+            <li><a href="https://sabeek-hub.github.io/portfolio/port/portfolio.html">Portfolio</a></li>
+            <li><a href="https://sabeek-hub.github.io/portfolio/todo/todolist1.html">To-Do List</a></li>
+            <li><a href="https://sabeek-hub.github.io/portfolio/microblogging/index1.html">Microblogging App</a></li>
+            <li><a href="https://sabeek-hub.github.io/portfolio/fooddelivery/login.html">Food Delivery Website</a></li>
+            <li><a href="https://sabeek-hub.github.io/portfolio/classifiedapps/index.html">Buy and Sell App</a></li>
+            <li><a href="https://sabeek-hub.github.io/portfolio/leave management/index.html">Leave Management System</a></li>
+            <li><a href="https://sabeek-hub.github.io/portfolio/project dashboard/index.html">Project Dashboard</a></li>
+            <li><a href="https://sabeek-hub.github.io/portfolio/online survey/index.html">Survey Application</a></li>
+        </ul>
+    </section>
 
-        <h3><i>6. Leave Management System</i></h3>
-        <a href="https://sabeek-hub.github.io/portfolio/leave management/index.html">Leave Management</a>
-
-        <h3><i>7. Project Dashboard</i></h3>
-        <a href="https://sabeek-hub.github.io/portfolio/project dashboard/index.html">Project Dashboard</a>
-
-        <h3><i>8. Online Survey</i></h3>
-        <a href="https://sabeek-hub.github.io/portfolio/online survey/index.html">Online Survey</a>        
-    </div>
     <footer>
-        <p>&copy; 2024 FSWD Lab. All rights reserved.</p>
+        <p>&copy; 2024 Harinipriya. All rights reserved.</p>
     </footer>
 </body>
 </html>
