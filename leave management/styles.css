@@ -8,7 +8,7 @@
 
 /* Body */
 body {
-  background: linear-gradient(135deg, #2c3e50, #2980b9); /* Changed gradient colors */
+  background: linear-gradient(135deg, #4e73df, #1c7ed6); /* Blue gradient */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -19,12 +19,12 @@ body {
 /* Container */
 .container {
   max-width: 900px;
-  background: rgba(255, 255, 255, 0.2); /* Lighter background */
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
   backdrop-filter: blur(15px);
   border-radius: 15px;
   padding: 40px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
-  color: #ecf0f1; /* Lighter text color */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: #f8f9fa; /* Light text color */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -38,8 +38,8 @@ h1 {
   font-size: 28px;
   text-align: center;
   margin-bottom: 30px;
-  color: #f5f6fa; /* Lighter color for header */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  color: #ecf0f1; /* Soft white text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
 }
 
 /* Form Styles */
@@ -56,9 +56,9 @@ textarea {
   border: none;
   border-radius: 8px;
   font-size: 14px;
-  background: rgba(255, 255, 255, 0.3); /* Slightly darker input background */
+  background: rgba(255, 255, 255, 0.25); /* Light background for inputs */
   color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
@@ -70,7 +70,7 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4); /* Brighter focus box-shadow */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.4); /* Focus effect */
   transform: scale(1.02);
 }
 
@@ -80,7 +80,7 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  background: linear-gradient(to right, #16a085, #1abc9c); /* Greenish gradient */
+  background: linear-gradient(to right, #ff6f61, #ff7f50); /* Orange gradient */
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
@@ -89,7 +89,7 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(to right, #1d8a6f, #1abc9c); /* Darker greenish gradient on hover */
+  background: linear-gradient(to right, #ff7043, #f76d57); /* Darker orange on hover */
   transform: scale(1.05);
 }
 
@@ -107,18 +107,18 @@ button:disabled {
 /* Employee Details */
 #employeeDetailsSection p {
   font-size: 16px;
-  color: #dcdde1; /* Subtle text color */
+  color: #dcdde1; /* Light grey text */
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
 #employeeDetailsSection button {
   margin-top: 20px;
-  background: linear-gradient(to right, #27ae60, #2ecc71); /* Green gradient */
+  background: linear-gradient(to right, #28a745, #2ecc71); /* Green gradient */
 }
 
 #employeeDetailsSection button:hover {
-  background: linear-gradient(to right, #218838, #28a745); /* Darker green hover */
+  background: linear-gradient(to right, #218838, #27ae60); /* Darker green on hover */
 }
 
 /* Manager Section */
@@ -132,12 +132,12 @@ button:disabled {
 #managerSection table td {
   padding: 14px;
   text-align: left;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border color */
   color: #ffffff;
 }
 
 #managerSection table th {
-  background: linear-gradient(to right, #16a085, #1abc9c); /* Greenish gradient for header */
+  background: linear-gradient(to right, #ff6f61, #ff7f50); /* Orange gradient for header */
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -146,7 +146,7 @@ button:disabled {
   padding: 8px 12px;
   border: none;
   border-radius: 5px;
-  background: linear-gradient(to right, #f39c12, #f1c40f); /* Yellowish gradient */
+  background: linear-gradient(to right, #f39c12, #f1c40f); /* Yellow gradient */
   color: #ffffff;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
